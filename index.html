@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPERFAS — Sistem Pengajuan Perbaikan Fasilitas Kampus</title>
+  <meta name="description" content="SIPERFAS adalah platform pengajuan perbaikan fasilitas kampus yang sederhana, cepat, dan terstruktur untuk mahasiswa Universitas Lambung Mangkurat.">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-siperfas sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">SIPER<span>FAS</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="pengajuan.html">Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="daftar.html">Daftar Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-primary-siperfas btn-sm" href="pengajuan.html">
+              <i class="bi bi-plus-circle"></i> Buat Pengajuan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="hero">
+    
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <span>Layanan Aktif • Universitas Lambung Mangkurat</span>
+          </div>
+          <h1>
+            Laporkan fasilitas rusak<br>
+            <span class="highlight">tanpa ribet,</span> langsung tertata.
+          </h1>
+          <p class="hero-subtitle">
+            SIPERFAS membantu mahasiswa menyampaikan laporan kerusakan
+            fasilitas kampus secara <strong>terstruktur, cepat, dan mudah dipantau</strong>
+            — tanpa perlu menghubungi banyak pihak satu per satu.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="pengajuan.html" class="btn btn-primary-siperfas btn-lg">
+              <i class="bi bi-pencil-square"></i> Mulai Pengajuan
+            </a>
+            <a href="daftar.html" class="btn btn-outline-siperfas btn-lg">
+              <i class="bi bi-list-check"></i> Lihat Daftar Pengajuan
+            </a>
+          </div>
+
+          
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-value" data-target="247" data-suffix="+">0</div>
+              <div class="hero-stat-label">Laporan Diterima</div>
+            </div>
+            <div class="hero-stat-item hero-stat-item--center">
+              <div class="hero-stat-value" data-target="89" data-suffix="%">0</div>
+              <div class="hero-stat-label">Respon &lt; 48 jam</div>
+              <div class="hero-stat-simulasi">(Data Simulasi)</div>
+            </div>
+            <div>
+              <div class="hero-stat-value" data-target="11" data-suffix="">0</div>
+              <div class="hero-stat-label">Fakultas Terlayani</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-5">
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              
+              <div class="hero-card hero-card-back">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span style="font-size:.8rem; opacity:.85;">Bulan Ini</span>
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div class="stat-num">47</div>
+                <div class="stat-lbl">Pengajuan diselesaikan</div>
+              </div>
+
+              
+              <div class="hero-card hero-card-main">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span style="font-weight:700; font-size:.95rem;">
+                    <i class="bi bi-file-text text-primary-siperfas"></i> Pengajuan #LPR-2026-007
+                  </span>
+                  <span class="status-badge proses">
+                    <i class="bi bi-gear-fill"></i> Diproses
+                  </span>
+                </div>
+                <div class="mock-form-row">
+                  <div class="mock-icon"><i class="bi bi-person"></i></div>
+                  <div>
+                    <div class="mock-label">Pemohon</div>
+                    <div class="mock-value">Naila Anggraini</div>
+                  </div>
+                </div>
+                <div class="mock-form-row">
+                  <div class="mock-icon amber"><i class="bi bi-tools"></i></div>
+                  <div>
+                    <div class="mock-label">Fasilitas</div>
+                    <div class="mock-value">AC Ruang 2.04 — Tidak dingin</div>
+                  </div>
+                </div>
+                <div class="mock-form-row">
+                  <div class="mock-icon"><i class="bi bi-geo-alt"></i></div>
+                  <div>
+                    <div class="mock-label">Lokasi</div>
+                    <div class="mock-value">Gedung MIPA Lt. 2</div>
+                  </div>
+                  <span class="mock-badge">URGENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Mengapa SIPERFAS?</span>
+        <h2 class="section-title">Dirancang untuk pengalaman mahasiswa</h2>
+        <p class="section-subtitle">
+          Setiap fitur dibuat agar laporan kerusakan fasilitas bisa diisi dalam
+          hitungan menit dan tidak hilang di tengah jalan.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h3 class="card-title">Pengisian Cepat</h3>
+            <p class="card-text">
+              Formulir terbagi dalam tiga bagian jelas: identitas, jenis permintaan,
+              dan alasan. Selesai dalam kurang dari 2 menit.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon amber">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h3 class="card-title">Laporan Terstruktur</h3>
+            <p class="card-text">
+              Setiap laporan otomatis mendapat ID unik dan tingkat urgensi,
+              sehingga petugas bisa menangani sesuai prioritas.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="card-title">Responsif di Semua Layar</h3>
+            <p class="card-text">
+              Dibangun dengan Bootstrap Grid System sehingga nyaman digunakan
+              dari laptop, tablet, maupun handphone.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon amber">
+              <i class="bi bi-eye"></i>
+            </div>
+            <h3 class="card-title">Transparan</h3>
+            <p class="card-text">
+              Semua pengajuan yang masuk dapat dilihat di halaman daftar,
+              lengkap dengan status menunggu / diproses / selesai.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon">
+              <i class="bi bi-funnel"></i>
+            </div>
+            <h3 class="card-title">Cari &amp; Filter Mudah</h3>
+            <p class="card-text">
+              Cari laporan berdasarkan ID, nama, atau lokasi. Filter cepat
+              berdasarkan status laporan.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon amber">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h3 class="card-title">Lingkungan Kampus</h3>
+            <p class="card-text">
+              Khusus disesuaikan dengan kebutuhan civitas akademika ULM —
+              dari Fakultas Teknik hingga FKIP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section bg-soft-primary" style="background-color: rgba(15, 118, 110, 0.04);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Cara Kerja</span>
+        <h2 class="section-title">Hanya tiga langkah sederhana</h2>
+        <p class="section-subtitle">
+          Dari menemukan kerusakan sampai laporan tercatat di sistem.
+        </p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4 fade-in-up">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4>Buka halaman Pengajuan</h4>
+            <p class="card-text">
+              Klik menu <strong>Pengajuan</strong> atau tombol "Mulai Pengajuan"
+              di halaman ini.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4>Isi formulir dengan lengkap</h4>
+            <p class="card-text">
+              Lengkapi identitas, jenis fasilitas yang rusak, lokasi, dan
+              deskripsi kerusakan beserta tingkat urgensinya.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4>Pantau di Daftar Pengajuan</h4>
+            <p class="card-text">
+              Setelah berhasil dikirim, laporanmu akan muncul di halaman
+              <strong>Daftar Pengajuan</strong> beserta nomor ID-nya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section section-tight">
+    <div class="container">
+      <div class="row align-items-center g-4 p-4 p-md-5"
+           style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+                  border-radius: var(--radius-xl); color: #fff;">
+        <div class="col-md-8">
+          <h2 style="color:#fff; margin-bottom:.5rem;">Siap laporkan kerusakan?</h2>
+          <p style="color: rgba(255,255,255,0.85); margin-bottom: 0; font-size:1.05rem;">
+            Bantu kampus jadi lebih nyaman dengan menyampaikan laporan secara
+            terstruktur. Hanya butuh dua menit.
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a href="pengajuan.html" class="btn btn-accent-siperfas btn-lg">
+            <i class="bi bi-arrow-right-circle"></i> Buat Pengajuan
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <span class="brand-mark">S</span>
+            <span class="brand-text">SIPER<span>FAS</span></span>
+          </a>
+          <p class="footer-text">
+            Sistem Pengajuan Perbaikan Fasilitas Kampus — proyek UAS
+            mata kuliah Pemrograman Web, Universitas Lambung Mangkurat.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5 class="footer-heading">Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="pengajuan.html">Pengajuan</a></li>
+            <li><a href="daftar.html">Daftar Pengajuan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5 class="footer-heading">Kontak Kampus</h5>
+          <ul class="footer-links">
+            <li><i class="bi bi-geo-alt me-1"></i> Jl. Brigjend. H. Hasan Basry, Banjarmasin</li>
+            <li><i class="bi bi-telephone me-1"></i> (0511) 3304177</li>
+            <li><i class="bi bi-globe me-1"></i> ulm.ac.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 SIPERFAS. Dibuat untuk keperluan akademik.</div>
+        <div>Built with <i class="bi bi-bootstrap-fill" style="color: var(--color-accent);"></i> Bootstrap 5 + jQuery</div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
