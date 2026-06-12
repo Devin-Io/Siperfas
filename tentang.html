@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang — SIPERFAS</title>
+  <meta name="description" content="Informasi tentang SIPERFAS — tujuan, batasan sistem, dan teknologi yang digunakan.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-siperfas sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">SIPER<span>FAS</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="pengajuan.html">Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="daftar.html">Daftar Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-primary-siperfas btn-sm" href="pengajuan.html">
+              <i class="bi bi-plus-circle"></i> Buat Pengajuan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="page-header">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="breadcrumb-trail">
+            <a href="index.html">Beranda</a>
+            <span class="sep">/</span>
+            <span>Tentang SIPERFAS</span>
+          </div>
+          <h1 style="margin-bottom: .75rem;">Tentang SIPERFAS</h1>
+          <p class="hero-subtitle">
+            Proyek UAS mata kuliah <strong>Pemrograman Web (Paralel 2)</strong>,
+            Universitas Lambung Mangkurat, yang mengangkat studi kasus
+            <em>Website Pengajuan Permintaan</em> untuk perbaikan fasilitas kampus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-tight">
+    <div class="container">
+      
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="form-card">
+            <span class="section-eyebrow">Tujuan Website</span>
+            <h2 style="font-size: 1.6rem; margin: .5rem 0 1rem;">
+              Menyederhanakan alur laporan kerusakan fasilitas
+            </h2>
+            <p>
+              Di lingkungan kampus, kerusakan fasilitas sering kali dilaporkan
+              secara manual — melalui pesan pribadi, grup kelas, atau langsung
+              kepada petugas. Cara ini kurang terstruktur sehingga laporan
+              dapat tercecer, tidak lengkap, atau sulit dipantau kembali.
+            </p>
+            <p>
+              <strong>SIPERFAS</strong> hadir sebagai sebuah simulasi website
+              yang membantu mahasiswa mengisi laporan perbaikan fasilitas
+              secara lebih rapi, mudah, dan terarah. Setiap laporan otomatis
+              mendapat ID, kategori, dan tingkat urgensi sehingga lebih mudah
+              dipantau.
+            </p>
+            <div class="divider"></div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Pemangku Kepentingan</h3>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex gap-2 align-items-start">
+                  <div class="mock-icon"><i class="bi bi-mortarboard"></i></div>
+                  <div>
+                    <div style="font-weight:700;">Mahasiswa</div>
+                    <div style="font-size:.88rem; color:var(--color-text-soft);">
+                      Mengisi form pengajuan perbaikan fasilitas.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex gap-2 align-items-start">
+                  <div class="mock-icon amber"><i class="bi bi-wrench-adjustable"></i></div>
+                  <div>
+                    <div style="font-weight:700;">Petugas Kampus</div>
+                    <div style="font-size:.88rem; color:var(--color-text-soft);">
+                      Menerima informasi awal kerusakan fasilitas.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex gap-2 align-items-start">
+                  <div class="mock-icon"><i class="bi bi-building"></i></div>
+                  <div>
+                    <div style="font-weight:700;">Admin Fakultas</div>
+                    <div style="font-size:.88rem; color:var(--color-text-soft);">
+                      Melihat simulasi daftar pengajuan yang masuk.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex gap-2 align-items-start">
+                  <div class="mock-icon amber"><i class="bi bi-person-workspace"></i></div>
+                  <div>
+                    <div style="font-weight:700;">Dosen/Tenaga Pengajar</div>
+                    <div style="font-size:.88rem; color:var(--color-text-soft);">
+                      Merasakan manfaat dari fasilitas kampus yang lebih terawat.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-5">
+          <div class="form-card">
+            <span class="section-eyebrow">Batasan Sistem</span>
+            <h2 style="font-size: 1.6rem; margin: .5rem 0 1rem;">Ruang lingkup proyek</h2>
+
+            <div class="limitation-item">
+              <span class="limitation-num">1</span>
+              <div>
+                <div style="font-weight:600;">Tanpa backend</div>
+                <div style="font-size:.88rem; color:var(--color-text-soft);">
+                  Tidak ada server, API, atau pemrosesan sisi server.
+                </div>
+              </div>
+            </div>
+            <div class="limitation-item">
+              <span class="limitation-num">2</span>
+              <div>
+                <div style="font-weight:600;">Tanpa database</div>
+                <div style="font-size:.88rem; color:var(--color-text-soft);">
+                  Tidak menggunakan MySQL, MongoDB, atau database persisten lainnya.
+                </div>
+              </div>
+            </div>
+            <div class="limitation-item">
+              <span class="limitation-num">3</span>
+              <div>
+                <div style="font-weight:600;">Data hanya simulasi</div>
+                <div style="font-size:.88rem; color:var(--color-text-soft);">
+                  Disimpan sementara di <code>localStorage</code> browser.
+                </div>
+              </div>
+            </div>
+            <div class="limitation-item">
+              <span class="limitation-num">4</span>
+              <div>
+                <div style="font-weight:600;">Berjalan langsung di browser</div>
+                <div style="font-size:.88rem; color:var(--color-text-soft);">
+                  Cukup dibuka dengan file HTML — tanpa proses build atau hosting khusus.
+                </div>
+              </div>
+            </div>
+            <div class="limitation-item">
+              <span class="limitation-num">5</span>
+              <div>
+                <div style="font-weight:600;">Responsif &amp; konsisten</div>
+                <div style="font-size:.88rem; color:var(--color-text-soft);">
+                  Tampilan menyesuaikan ukuran layar, semua halaman terintegrasi melalui navbar.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Teknologi yang Digunakan</span>
+        <h2 class="section-title">Stack sederhana, fokus pada fundamental</h2>
+        <p class="section-subtitle">
+          Seluruh website dibangun memakai materi yang sudah diajarkan di mata kuliah
+          Pemrograman Web Paralel 2.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon" style="color:#e34c26;">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <h3 class="card-title">HTML5</h3>
+            <p class="card-text">
+              Membentuk struktur dan kerangka semua halaman: navbar, hero,
+              form, kartu daftar, dan footer.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon" style="color:#1572b6;">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <h3 class="card-title">CSS3 Custom</h3>
+            <p class="card-text">
+              Mengatur identitas visual: palet warna teal-amber, typography
+              Bricolage Grotesque, animasi, dan tampilan kartu.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon" style="color:#7952b3;">
+              <i class="bi bi-bootstrap-fill"></i>
+            </div>
+            <h3 class="card-title">Bootstrap 5</h3>
+            <p class="card-text">
+              Komponen wajib: <strong>Navbar</strong>, <strong>Grid System</strong>,
+              <strong>Card</strong>, <strong>Form</strong>, dan <strong>Button</strong>.
+              Plus modal sukses pasca-submit.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon amber">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <h3 class="card-title">JavaScript</h3>
+            <p class="card-text">
+              Validasi form, character counter, animasi statistik counter,
+              dan simulasi penyimpanan via <code>localStorage</code>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon amber">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3 class="card-title">jQuery 3.7</h3>
+            <p class="card-text">
+              Event handling, animasi fade in/out toast notification, dropdown
+              dinamis fakultas → prodi, filter chip, dan smooth scroll.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="card-siperfas">
+            <div class="card-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="card-title">Responsive Design</h3>
+            <p class="card-text">
+              Breakpoint Bootstrap (sm/md/lg/xl) memastikan tampilan nyaman
+              di desktop, tablet, maupun handphone.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row mt-5 g-4">
+        <div class="col-12">
+          <div class="form-card">
+            <span class="section-eyebrow">Pemetaan Komponen Bootstrap</span>
+            <h3 style="font-size: 1.3rem; margin: .5rem 0 1.25rem;">
+              Lokasi penggunaan komponen wajib
+            </h3>
+
+            <div class="table-responsive">
+              <table class="table align-middle mb-0">
+                <thead>
+                  <tr style="background-color: var(--color-surface-alt);">
+                    <th style="font-weight: 700; color: var(--color-text); padding: .85rem 1rem;">Komponen</th>
+                    <th style="font-weight: 700; color: var(--color-text); padding: .85rem 1rem;">Lokasi Penggunaan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: .85rem 1rem;">
+                      <span class="tech-badge" style="margin:0;">
+                        <i class="bi bi-menu-button-wide"></i> Navbar
+                      </span>
+                    </td>
+                    <td style="padding: .85rem 1rem; color: var(--color-text-muted);">
+                      Seluruh halaman — Beranda, Pengajuan, Daftar Pengajuan, Tentang.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: .85rem 1rem;">
+                      <span class="tech-badge" style="margin:0;">
+                        <i class="bi bi-grid-3x3-gap"></i> Grid System
+                      </span>
+                    </td>
+                    <td style="padding: .85rem 1rem; color: var(--color-text-muted);">
+                      Layout hero, susunan kartu fitur, form 2 kolom, list pengajuan.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: .85rem 1rem;">
+                      <span class="tech-badge" style="margin:0;">
+                        <i class="bi bi-card-heading"></i> Card
+                      </span>
+                    </td>
+                    <td style="padding: .85rem 1rem; color: var(--color-text-muted);">
+                      Kartu fitur, step cara kerja, kartu pengajuan, sidebar tips.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: .85rem 1rem;">
+                      <span class="tech-badge" style="margin:0;">
+                        <i class="bi bi-input-cursor-text"></i> Form
+                      </span>
+                    </td>
+                    <td style="padding: .85rem 1rem; color: var(--color-text-muted);">
+                      Halaman Pengajuan — input, select, textarea, radio, validasi.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: .85rem 1rem;">
+                      <span class="tech-badge" style="margin:0;">
+                        <i class="bi bi-square"></i> Button
+                      </span>
+                    </td>
+                    <td style="padding: .85rem 1rem; color: var(--color-text-muted);">
+                      Kirim, reset, navigasi CTA, filter chip, dan tombol modal.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-tight pb-5">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">FAQ</span>
+        <h2 class="section-title">Pertanyaan yang sering ditanyakan</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Apakah data laporan saya tersimpan permanen?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse"
+                   data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color:var(--color-text-muted);">
+                  Tidak. SIPERFAS adalah simulasi tanpa backend dan tanpa database.
+                  Data hanya tersimpan sementara di <code>localStorage</code> browser
+                  pengguna, sehingga akan hilang jika cache browser dibersihkan.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Apa beda tingkat urgensi Tinggi dan Darurat?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse"
+                   data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color:var(--color-text-muted);">
+                  <strong>Tinggi</strong> dipakai untuk kerusakan yang sangat mengganggu
+                  kegiatan kuliah tapi tidak membahayakan. <strong>Darurat</strong>
+                  khusus untuk kondisi yang berpotensi membahayakan keselamatan
+                  (korsleting listrik, plafon ambruk, pintu darurat tidak bisa dibuka, dsb).
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Bagaimana cara melihat status laporan saya?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse"
+                   data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color:var(--color-text-muted);">
+                  Setelah berhasil mengirim, kamu akan mendapat nomor ID pengajuan
+                  (cth. <code>LPR-2026-007</code>). Buka halaman
+                  <a href="daftar.html">Daftar Pengajuan</a> lalu cari berdasarkan
+                  ID atau nama untuk melihat status terkini.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Apakah website ini sudah bisa langsung dipakai kampus?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse"
+                   data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color:var(--color-text-muted);">
+                  Belum. SIPERFAS adalah prototipe simulasi untuk keperluan
+                  akademik (UAS Pemrograman Web). Agar dapat dipakai dalam
+                  skala kampus, masih diperlukan backend untuk menyimpan data
+                  permanen, sistem otentikasi, dan integrasi dengan unit
+                  pemeliharaan fasilitas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight pb-5">
+    <div class="container">
+      <div class="row align-items-center g-4 p-4 p-md-5"
+           style="background: var(--color-surface); border: 1px solid var(--color-border);
+                  border-radius: var(--radius-xl);">
+        <div class="col-md-8">
+          <h2 style="margin-bottom:.5rem; font-size: 1.6rem;">
+            Sudah siap coba sendiri?
+          </h2>
+          <p style="margin-bottom: 0; color: var(--color-text-muted);">
+            Buka halaman Pengajuan dan isi laporan simulasi pertama kamu — atau
+            lihat daftar contoh laporan yang sudah tersedia.
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <div class="d-flex flex-wrap gap-2 justify-content-md-end">
+            <a href="pengajuan.html" class="btn btn-primary-siperfas">
+              <i class="bi bi-pencil-square"></i> Pengajuan
+            </a>
+            <a href="daftar.html" class="btn btn-outline-siperfas">
+              <i class="bi bi-list-check"></i> Daftar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <span class="brand-mark">S</span>
+            <span class="brand-text">SIPER<span>FAS</span></span>
+          </a>
+          <p class="footer-text">
+            Sistem Pengajuan Perbaikan Fasilitas Kampus — proyek UAS
+            mata kuliah Pemrograman Web, Universitas Lambung Mangkurat.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5 class="footer-heading">Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="pengajuan.html">Pengajuan</a></li>
+            <li><a href="daftar.html">Daftar Pengajuan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5 class="footer-heading">Kontak Kampus</h5>
+          <ul class="footer-links">
+            <li><i class="bi bi-geo-alt me-1"></i> Jl. Brigjend. H. Hasan Basry, Banjarmasin</li>
+            <li><i class="bi bi-telephone me-1"></i> (0511) 3304177</li>
+            <li><i class="bi bi-globe me-1"></i> ulm.ac.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 SIPERFAS. Dibuat untuk keperluan akademik.</div>
+        <div>Built with <i class="bi bi-bootstrap-fill" style="color: var(--color-accent);"></i> Bootstrap 5 + jQuery</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengajuan Perbaikan — SIPERFAS</title>
+  <meta name="description" content="Form pengajuan perbaikan fasilitas kampus. Isi identitas pemohon, jenis permintaan, dan alasan dengan lengkap.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-siperfas sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">SIPER<span>FAS</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="pengajuan.html">Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="daftar.html">Daftar Pengajuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-outline-siperfas btn-sm" href="daftar.html">
+              <i class="bi bi-list-check"></i> Lihat Daftar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="breadcrumb-trail">
+            <a href="index.html">Beranda</a>
+            <span class="sep">/</span>
+            <span>Pengajuan Perbaikan Fasilitas</span>
+          </div>
+          <h1 style="margin-bottom: .75rem;">Ajukan Perbaikan Fasilitas</h1>
+          <p class="hero-subtitle">
+            Isi formulir di bawah ini dengan lengkap. Semua data yang ditandai
+            <span class="req" style="color:var(--color-danger);font-weight:700;">*</span>
+            wajib diisi. Laporan akan diberi nomor ID otomatis dan muncul di
+            halaman Daftar Pengajuan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section-tight pb-5">
+    
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="form-card">
+            <form id="formPengajuan" novalidate>
+
+              
+              <div class="form-section">
+                <div class="form-section-title">
+                  <span class="form-section-num">1</span>
+                  Identitas Pemohon
+                </div>
+                <p class="form-section-desc">
+                  Data ini digunakan agar petugas bisa mengkonfirmasi laporan jika diperlukan.
+                </p>
+
+                <div class="row g-3">
+                  <div class="col-md-7">
+                    <label for="nama" class="form-label">
+                      Nama Lengkap <span class="req">*</span>
+                    </label>
+                    <div class="input-with-icon">
+                      <i class="bi bi-person"></i>
+                      <input type="text" class="form-control" id="nama"
+                             placeholder="cth. Aulia Rahmawati">
+                    </div>
+                    <div class="invalid-feedback">Nama lengkap wajib diisi.</div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="nim" class="form-label">
+                      NIM <span class="req">*</span>
+                    </label>
+                    <div class="input-with-icon">
+                      <i class="bi bi-card-text"></i>
+                      <input type="text" class="form-control" id="nim"
+                             inputmode="numeric" placeholder="cth. 2010817320012">
+                    </div>
+                    <div class="invalid-feedback" id="nimFeedback">NIM wajib diisi.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="fakultas" class="form-label">
+                      Fakultas <span class="req">*</span>
+                    </label>
+                    <select class="form-select" id="fakultas">
+                      <option value="">— Pilih fakultas —</option>
+                      <option value="Fakultas Teknik">Fakultas Teknik</option>
+                      <option value="Fakultas MIPA">Fakultas MIPA</option>
+                      <option value="Fakultas Ekonomi & Bisnis">Fakultas Ekonomi &amp; Bisnis</option>
+                      <option value="Fakultas Hukum">Fakultas Hukum</option>
+                      <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                      <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+                      <option value="Fakultas Perikanan & Kelautan">Fakultas Perikanan &amp; Kelautan</option>
+                      <option value="FKIP">FKIP</option>
+                      <option value="FISIP">FISIP</option>
+                    </select>
+                    <div class="invalid-feedback">Fakultas wajib dipilih.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="prodi" class="form-label">
+                      Program Studi <span class="req">*</span>
+                    </label>
+                    <select class="form-select" id="prodi" disabled>
+                      <option value="">— Pilih fakultas dulu —</option>
+                    </select>
+                    <div class="invalid-feedback">Program studi wajib dipilih.</div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="form-section">
+                <div class="form-section-title">
+                  <span class="form-section-num">2</span>
+                  Jenis Permintaan
+                </div>
+                <p class="form-section-desc">
+                  Pilih kategori fasilitas yang bermasalah dan lokasi tepatnya.
+                </p>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fasilitas" class="form-label">
+                      Jenis Fasilitas <span class="req">*</span>
+                    </label>
+                    <select class="form-select" id="fasilitas">
+                      <option value="">— Pilih jenis fasilitas —</option>
+                      <option>AC / Pendingin Ruangan</option>
+                      <option>Lampu / Penerangan</option>
+                      <option>Kursi / Meja</option>
+                      <option>Proyektor</option>
+                      <option>Whiteboard / Papan Tulis</option>
+                      <option>Pintu</option>
+                      <option>Jendela</option>
+                      <option>Toilet / Kamar Mandi</option>
+                      <option>Lantai / Plafon</option>
+                      <option>Stop Kontak / Listrik</option>
+                      <option>WiFi / Jaringan Internet</option>
+                      <option>Sound System</option>
+                      <option>Tangga / Lift</option>
+                      <option>Lainnya</option>
+                    </select>
+                    <div class="invalid-feedback">Jenis fasilitas wajib dipilih.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="lokasi" class="form-label">
+                      Lokasi Fasilitas <span class="req">*</span>
+                    </label>
+                    <div class="input-with-icon">
+                      <i class="bi bi-geo-alt"></i>
+                      <input type="text" class="form-control" id="lokasi"
+                             placeholder="cth. Gedung MIPA Lt. 2, Ruang 2.04">
+                    </div>
+                    <div class="form-text">Sebutkan gedung, lantai, dan nomor ruang jika ada.</div>
+                    <div class="invalid-feedback">Lokasi wajib diisi.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label d-block">
+                      Tingkat Urgensi <span class="req">*</span>
+                    </label>
+                    <div class="urgensi-group">
+                      <div class="urgensi-option" data-level="rendah">
+                        <input type="radio" name="urgensi" id="urgRendah" value="rendah">
+                        <label for="urgRendah">
+                          <span class="urgensi-icon">🌱</span>
+                          <span class="urgensi-label">Rendah</span>
+                          <span class="urgensi-desc">Tidak mengganggu aktivitas</span>
+                        </label>
+                      </div>
+                      <div class="urgensi-option" data-level="sedang">
+                        <input type="radio" name="urgensi" id="urgSedang" value="sedang">
+                        <label for="urgSedang">
+                          <span class="urgensi-icon">⚙️</span>
+                          <span class="urgensi-label">Sedang</span>
+                          <span class="urgensi-desc">Cukup mengganggu</span>
+                        </label>
+                      </div>
+                      <div class="urgensi-option" data-level="tinggi">
+                        <input type="radio" name="urgensi" id="urgTinggi" value="tinggi">
+                        <label for="urgTinggi">
+                          <span class="urgensi-icon">⚠️</span>
+                          <span class="urgensi-label">Tinggi</span>
+                          <span class="urgensi-desc">Sangat mengganggu</span>
+                        </label>
+                      </div>
+                      <div class="urgensi-option" data-level="darurat">
+                        <input type="radio" name="urgensi" id="urgDarurat" value="darurat">
+                        <label for="urgDarurat">
+                          <span class="urgensi-icon">🚨</span>
+                          <span class="urgensi-label">Darurat</span>
+                          <span class="urgensi-desc">Berbahaya / harus segera</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-none" id="urgensiFeedback"
+                         style="margin-top: .5rem;">
+                      Mohon pilih tingkat urgensi.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="form-section">
+                <div class="form-section-title">
+                  <span class="form-section-num">3</span>
+                  Alasan &amp; Deskripsi
+                </div>
+                <p class="form-section-desc">
+                  Jelaskan kerusakan yang ditemukan sejelas mungkin agar petugas
+                  dapat menyiapkan penanganan yang tepat.
+                </p>
+
+                <div>
+                  <label for="deskripsi" class="form-label">
+                    Deskripsi Kerusakan <span class="req">*</span>
+                  </label>
+                  <textarea class="form-control" id="deskripsi" rows="5"
+                            maxlength="500"
+                            placeholder="cth. AC di ruang 2.04 sudah tidak dingin sejak minggu lalu. Suhu ruangan sangat panas terutama di siang hari saat perkuliahan."></textarea>
+                  <div class="d-flex justify-content-between">
+                    <div class="invalid-feedback" id="deskripsiFeedback">
+                      Deskripsi kerusakan wajib diisi.
+                    </div>
+                    <div class="char-counter" id="descCounter">0 / 500 karakter</div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="d-flex flex-wrap gap-2 justify-content-end pt-3">
+                <button type="button" class="btn btn-ghost-siperfas" id="btnReset">
+                  <i class="bi bi-arrow-counterclockwise"></i> Reset
+                </button>
+                <button type="submit" class="btn btn-primary-siperfas" id="btnSubmit">
+                  <i class="bi bi-send-fill"></i> Kirim Pengajuan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4">
+          <div class="card-siperfas mb-3">
+            <div class="card-icon"><i class="bi bi-info-circle"></i></div>
+            <h3 class="card-title">Tips Pengisian</h3>
+            <ul class="ps-3 mb-0" style="color: var(--color-text-muted); font-size:.93rem; line-height:1.7;">
+              <li>Pastikan NIM dan nama sesuai KTM.</li>
+              <li>Sebutkan ruangan secara spesifik untuk mempercepat penanganan.</li>
+              <li>Pilih urgensi <strong>Darurat</strong> hanya untuk kondisi berbahaya (kebakaran, korsleting, dsb).</li>
+              <li>Cek halaman <a href="daftar.html">Daftar Pengajuan</a> untuk melihat status laporanmu.</li>
+            </ul>
+          </div>
+
+          <div class="card-siperfas">
+            <div class="card-icon amber"><i class="bi bi-shield-lock"></i></div>
+            <h3 class="card-title">Privasi Data</h3>
+            <p class="card-text">
+              Data laporan ini hanya disimpan sementara di browser sebagai
+              <em>simulasi</em>. Sistem tidak menggunakan backend maupun database,
+              sesuai dengan ruang lingkup proyek UAS Pemrograman Web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+        <div class="modal-body text-center p-4 p-md-5">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light));
+                      border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+                      color:#fff;font-size:2rem;margin-bottom:1.25rem;
+                      box-shadow: 0 12px 32px rgba(15,118,110,.35);">
+            <i class="bi bi-check-lg"></i>
+          </div>
+          <h3 style="font-size:1.5rem; margin-bottom:.6rem;">Pengajuan Terkirim!</h3>
+          <p style="color: var(--color-text-muted); margin-bottom:1.25rem;">
+            Laporan kamu sudah tercatat dengan nomor ID berikut:
+          </p>
+          <div style="background: var(--color-surface-alt); padding: .85rem 1.2rem;
+                      border-radius: var(--radius-md); font-family: var(--font-display);
+                      font-weight: 700; font-size: 1.15rem; color: var(--color-primary-dark);
+                      margin-bottom: 1.75rem; letter-spacing: .02em;">
+            <span class="submission-id-result">LPR-2026-XXX</span>
+          </div>
+          <div class="d-flex gap-2 justify-content-center flex-wrap">
+            <button type="button" class="btn btn-outline-siperfas" data-bs-dismiss="modal">
+              <i class="bi bi-plus-circle"></i> Buat Lagi
+            </button>
+            <a href="daftar.html" class="btn btn-primary-siperfas">
+              <i class="bi bi-list-check"></i> Lihat Daftar Pengajuan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <span class="brand-mark">S</span>
+            <span class="brand-text">SIPER<span>FAS</span></span>
+          </a>
+          <p class="footer-text">
+            Sistem Pengajuan Perbaikan Fasilitas Kampus — proyek UAS
+            mata kuliah Pemrograman Web, Universitas Lambung Mangkurat.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5 class="footer-heading">Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="pengajuan.html">Pengajuan</a></li>
+            <li><a href="daftar.html">Daftar Pengajuan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5 class="footer-heading">Kontak Kampus</h5>
+          <ul class="footer-links">
+            <li><i class="bi bi-geo-alt me-1"></i> Jl. Brigjend. H. Hasan Basry, Banjarmasin</li>
+            <li><i class="bi bi-telephone me-1"></i> (0511) 3304177</li>
+            <li><i class="bi bi-globe me-1"></i> ulm.ac.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 SIPERFAS. Dibuat untuk keperluan akademik.</div>
+        <div>Built with <i class="bi bi-bootstrap-fill" style="color: var(--color-accent);"></i> Bootstrap 5 + jQuery</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
